@@ -2,19 +2,15 @@ import streamlit as st
 import hashlib
 from cryptography.fernet import Fernet
 
-# Initialize session state variables
 if 'failed_attempts' not in st.session_state:
     st.session_state.failed_attempts = 0
 if 'reauthorized' not in st.session_state:
     st.session_state.reauthorized = False
 
-# Generate a symmetric key for encryption
 KEY = Fernet.generate_key()
 cipher = Fernet(KEY)
 
-# In-memory data storage
-stored_data = {}  # Format: { "encrypted_text": { "encrypted_text": "...", "passkey": "hashed_passkey" } }
-
+stored_data = {}  
 # Hash passkey using SHA-256
 def hash_passkey(passkey):
     return hashlib.sha256(passkey.encode()).hexdigest()
