@@ -4,7 +4,9 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "pip>=25.1.1",
+]
 
 [tool.poetry]
 name = "mindset-growth"
