@@ -508,3 +508,4 @@ zict @ file:///C:/b/abs_fc7elavmem/croot/zict_1682698759288/work
 zipp==3.21.0
 zope.interface @ file:///C:/ci_311/zope.interface_1676439868776/work
 zstandard==0.23.0
+aiobotocore==2.4.2
