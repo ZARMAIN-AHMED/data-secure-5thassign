@@ -509,3 +509,4 @@ zipp==3.21.0
 zope.interface @ file:///C:/ci_311/zope.interface_1676439868776/work
 zstandard==0.23.0
 aiobotocore==2.4.2
+aiobotocore==2.7.0
